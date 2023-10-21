@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SolanaSection from './components/SolanaSection';
+import Footer from './components/Footer';
+import TeamSection from './components/TeamSection';
+import CyberGame from './components/CyberGame';
+import Cyberfps from './components/Cyberfps';
+import Cs from './components/Cs';
+import HeroSection from './components/HeroSection';
+import FaqSection from './components/FaqSection';
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Routes>
+        <Route path='/' exact element={<HeroSection />}></Route>
+        <Route path='/CyberGame' exact element={<CyberGame />}></Route>
+        <Route path='/Cyberfps' exact element={<Cyberfps />}></Route>
+        <Route path='/Cs' exact element={<Cs />}></Route>
+        <Route path='/TeamSection' exact element={<TeamSection />}></Route>
+        <Route path='/FaqSection' exact element={<FaqSection />}></Route>
+        <Route path='/SolanasSection' exact element={<SolanaSection />}></Route>
+      </Routes > */}
+
+
+     <HeroSection />
+      <CyberGame />
+      <Cyberfps />
+      <Cs />
+      <TeamSection />
+      <FaqSection />
+      <SolanaSection />
+      <Footer />
+    </>);
 }
 
 export default App;

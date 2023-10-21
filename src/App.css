@@ -1,38 +1,573 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+/* ------------------------------common-classes---------------------------------------- */
+.ff_audiowide {
+  font-family: "Audiowide", sans-serif;
+}
+.ff_montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.lh_normal {
+  line-height: normal;
+}
+.lh_113 {
+  line-height: 113%;
+}
+.lh_150 {
+  line-height: 150%;
+}
+.lh_160 {
+  line-height: 160%;
+}
+.opacity_07 {
+  opacity: 0.7;
+}
+/* -------------------------------root-section----------------------------------------- */
+:root {
+  /* -------------------------font-size----------------- */
+  --fs-xl: 64px;
+  --fs-lg: 28px;
+  --fs-md: 24px;
+  --fs-sm: 16px;
+}
+/* -----------------------------------font-size--------------------------------------- */
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+.fs_md {
+  font-size: var(--fs-md);
+}
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+/* -----------------------------nav-section----------------------------- */
+.max_w_128 {
+  max-width: 128px;
+}
+.link {
+  padding: 4px 22px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  background-image: url("./assets/images/webp/rectangle_img.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.z_index_3 {
+  z-index: 3 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hover_border::before {
+  content: "";
+  display: block;
+  height: 20px;
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 20px;
+}
+
+.hover_border:hover::before {
+  border-right: 3.5px solid #1eadb6;
+  border-top: 3.5px solid #1eadb6;
+  right: -5.2px;
+  top: -5.2px;
+}
+
+.hover_border::after {
+  content: "" !important;
+  display: block !important;
+  height: 20px !important;
+  position: absolute !important;
+  transition: all 0.3s linear !important;
+  width: 20px !important;
+}
+
+.hover_border:hover::after {
+  border-right: 3.5px solid #1eadb6 !important;
+  border-top: 3.5px solid #1eadb6 !important;
+  right: 5.2px !important;
+  top: 5.2px !important;
+}
+.social_icon,
+.social_icon1 {
+  position: relative;
+  z-index: 4;
+  transition: all 300ms ease-in-out;
+}
+
+.social_icon:hover path {
+  fill: #1eadb6;
+}
+
+.social_icon:hover path {
+  stroke: #1eadb6;
+}
+/* ------------------------------------hero-section-------------------------------- */
+.hero_bg {
+  background-image: url(./assets//images//webp/hero_bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.max_w_344 {
+  max-width: 344px;
+}
+.max_h_239 {
+  max-height: 239px;
+}
+.get_btn {
+  border-radius: 7px;
+  background: #1eadb6;
+  border: #1eadb6;
+  padding: 12px 36px;
+  list-style: none;
+  text-decoration: none;
+}
+.learn_btn {
+  border-radius: 7px;
+  border: 2px solid #1eadb6;
+  padding: 10px 36px;
+  list-style: none;
+  text-decoration: none;
+  background: transparent;
+}
+
+/* --------------------------------------cyber-game---------------------------------- */
+
+.text-teal {
+  color: #1eadb6;
+}
+
+.gameplay_line::after {
+  content: "";
+  position: absolute;
+  right: 34%;
+  max-width: 179px;
+  width: 100%;
+  height: 2px;
+  background-color: #1eadb6;
+}
+
+.gameplay_line::before {
+  content: "";
+  position: absolute;
+  bottom: -6%;
+  left: 33%;
+  max-width: 179px;
+  width: 100%;
+  height: 2px;
+  background-color: #1eadb6;
+}
+
+.play_btn {
+  position: absolute;
+  transform: translateY(50%);
+  cursor: pointer !important;
+}
+
+.btn-cross {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background: var(--text-white);
+  border-radius: 50%;
+  border: none;
+}
+
+.h-500 {
+  height: 500px !important;
+}
+
+.right-1 {
+  right: -1%;
+}
+
+.top-3 {
+  top: -3%;
+}
+
+.btn-cross {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background: #1eadb6;
+  border-radius: 50%;
+  border: none;
+}
+
+.modal-content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background: #1eadb6 !important;
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0 !important;
+}
+
+.btn-close {
+  --bs-btn-close-focus-shadow: none !important;
+}
+
+.modal-dialog {
+  max-width: 1320px !important;
+  padding: 30px !important;
+}
+
+.modal-content {
+  padding: 5px !important;
+  max-height: 400px !important;
+  max-height: 530px !important;
+}
+
+.pt_modal {
+  padding-top: 95px;
+}
+.pt_gameplay {
+  padding-top: 116px;
+}
+/* ------------------------------------------cyberfps------------------------------------ */
+.text_sky {
+  color: #1eadb6;
+}
+
+.text_grey {
+  color: #4d4d4d;
+  opacity: 70%;
+}
+
+.bg_cyber {
+  background-image: url(./assets/images/webp/dotes_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.py_cyber {
+  padding: 170px 0px;
+}
+/* ---------------------------------------crypto-straps--------------------------------------  */
+.cyberfps_line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7%;
+  max-width: 117px;
+  width: 100%;
+  height: 2px;
+  background: #1eadb6;
+}
+
+.lh_150 {
+  line-height: 150%;
+}
+
+.py_cryptostrap {
+  padding: 113px 0px;
+}
+/* ------------------------------------team-section---------------------------------- */
+.py_team {
+  padding: 170px 0px;
+}
+.team_line::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1eadb6;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.outline {
+  outline: none !important;
+}
+/* ------------------------------------faq-section----------------------------------- */
+.py_faq {
+  padding: 100px 0 137px 0px;
+}
+.accordion {
+  width: 1078px !important;
+  max-width: 94%;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.acrdn-top-radius {
+  position: absolute;
+  top: -1.1%;
+  left: -0.2%;
+}
+
+.acrdn-bttm-radius {
+  position: absolute;
+  right: -0.3%;
+  bottom: -1.9%;
+}
+
+.accordion-item {
+  color: transparent !important;
+  position: relative;
+  padding: 14px;
+  background-color: transparent !important;
+  border: 1px solid #1eadb6;
+  border-top-left-radius: 42px !important;
+  border-bottom-right-radius: 38px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.accordion-button {
+  position: relative;
   color: white;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  flex-shrink: 0;
+  background-color: transparent !important;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
 }
 
-.App-link {
-  color: #61dafb;
+.accordion-button.collapsed {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.accordion-button:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.accordion-body {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-right: 20px;
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  background: transparent;
+}
+
+.accordion-body {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-right: 20px;
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  background: transparent;
+}
+
+.faq_line::after {
+  content: "";
+  position: absolute;
+  width: 179px;
+  height: 2px;
+  left: 45%;
+  background: #1eadb6;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  color: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #1eadb6 !important;
+  border-top-left-radius: 42px !important;
+  border-bottom-right-radius: 38px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.fw_600 {
+  font-weight: 600;
+}
+
+.accordion-button {
+  font-family: "Montserrat" !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+.accordion-button::after {
+  background-image: url(./assets/images/webp/accordian_arrow.webp) !important;
+}
+.accordion-item:hover {
+  box-shadow: 0px 0px 1em 0px #1eadb6;
+}
+/* ---------------------------------Solana-section-------------------------------------- */
+.bg_solana {
+  background-image: url(./assets/images/webp/dotes_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.max_w_385 {
+  max-width: 385px;
+}
+.max_w_263 {
+  max-width: 263px;
+}
+.max_h_225 {
+  max-block-size: 225px;
+}
+.py_solana {
+  padding: 180px 0;
+}
+/* -----------------------------------------footer-section-------------------------------- */
+.bg_footer {
+  background: url(./assets/images/webp/footer_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.max_w_200 {
+  max-width: 200px;
+}
+.max_h_139 {
+  max-height: 139px;
+}
+/* -----------------------------------------media-quaries------------------------------------- */
+@media (max-width: 992px) {
+  .py_solana {
+    padding: 90px 0;
   }
-  to {
-    transform: rotate(360deg);
+  .py_team {
+    padding: 90px 0px;
+  }
+  .py_cryptostrap {
+    padding: 90px 0px;
+  }
+  .py_cyber {
+    padding: 90px 0px;
+  }
+  .pt_gameplay {
+    padding-top: 90px;
+  }
+  .pt_modal {
+    padding-top: 50px;
+  }
+  .py_faq {
+    padding: 35px 0 90px 0px;
+  }
+  .accordion-item {
+    padding: 5px !important;
+    padding-right: 14px !important;
+  }
+  .overflow_hiddden {
+    overflow: hidden;
+  }
+
+  .mobile_view {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 300ms linear;
+  }
+
+  .line,
+  .line1,
+  .line2 {
+    width: 40px;
+    background-color: white;
+    min-height: 4px;
+    border-radius: 5px;
+    transition: 300ms linear;
+  }
+
+  .cross .line {
+    transform: rotate(50deg) translate(17px, 14px);
+  }
+
+  .cross .line1 {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  .cross .line2 {
+    transform: rotate(-50deg) translateY(-50%);
+  }
+  :root {
+    --fs-xl: 60px;
+    --fs-lg: 28px;
+    --fs-md: 24px;
+    --fs-sm: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .mw_568 {
+    max-width: 568px;
+  }
+  .mw_394 {
+    max-width: 394px;
+  }
+}
+@media (max-width: 576px) {
+  .py_solana {
+    padding: 40px 0;
+  }
+  .py_team {
+    padding: 40px 0px;
+  }
+  .py_cryptostrap {
+    padding: 40px 0px;
+  }
+  .py_cyber {
+    padding: 40px 0px;
+  }
+  .pt_modal {
+    padding-top: 25px;
+  }
+  .pt_gameplay {
+    padding-top: 40px;
+  }
+  .py_faq {
+    padding: 30px 0 50px 0px;
+  }
+  .accordion-button {
+    font-size: 16px !important;
+  }
+  :root {
+    --fs-xl: 40px;
+    --fs-lg: 22px;
+    --fs-md: 20px;
+    --fs-sm: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom_container {
+    max-width: 1140px !important;
   }
 }
