@@ -12,11 +12,13 @@ const Cs = () => {
               <img src={Csimg} alt="CSimg" className="w-100 mw_394" />
             </Col>
             <Col xs={11} sm={12} lg={6} className="pt-5 pt-lg-0">
-              <h2 className="ff_audiowide fw-normal text-white fs_xl position-relative">
+              <h2 className="ff_audiowide fw-normal text-white fs_xl position-relative" data-aos="fade-left"
+                data-aos-duration="300" data-aos-easing="linear">
                 CryptoStraps
               </h2>
               <div className="blue_line pb-1"></div>
-              <p className="ff_montserrat fs_sm fw-normal text-white lh_150 mw_568 opacity_07 pt-2 mb-0">
+              <p className="ff_montserrat fs_sm fw-normal text-white lh_150 mw_568 opacity_07 pt-2 mb-0" data-aos="fade-left"
+                data-aos-duration="500" data-aos-easing="linear">
                 CryptoStraps are firearms pushing the boundaries of 3D animated
                 art. CyberFPS will be powered by CryptoStraps $AMMO and is
                 directly integrated with the existing CryptoStraps NFTs. You

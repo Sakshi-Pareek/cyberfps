@@ -8,9 +8,19 @@ import Cyberfps from './components/Cyberfps';
 import Cs from './components/Cs';
 import HeroSection from './components/HeroSection';
 import FaqSection from './components/FaqSection';
-import { Route, Routes } from 'react-router-dom'
-
+// import { Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1200,
+      once: true,
+    });
+    Aos.refresh();
+  });
+
   return (
     <>
       {/* <Routes>
@@ -24,7 +34,7 @@ function App() {
       </Routes > */}
 
 
-     <HeroSection />
+      <HeroSection />
       <CyberGame />
       <Cyberfps />
       <Cs />

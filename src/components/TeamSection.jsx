@@ -20,24 +20,30 @@ const TeamSection = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          centreMode:true,
+          centreMode: true,
           infinite: true,
+          centerMode: true,
+          centerpadding: 20,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2,
           slidesToScroll: 1,
+          centerpadding: 20,
+          centerMode: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
           slidesToScroll: 1,
+          centerpadding: 20,
+          centerMode: true,
         },
       },
     ],
@@ -45,44 +51,45 @@ const TeamSection = () => {
   return (
     <>
       <div className="py_team">
-        <h2 className="text-center ff_audiowide fs_xl fw-normal lh_normal text-black mb-5 pb-2">
+        <h2 className="text-center ff_audiowide fs_xl fw-normal lh_normal text-black mb-5 pb-2" data-aos="zoom-in">
           <span className="team_line position-relative">Team</span>
         </h2>
-        <Container className="custom_container">
+        <Container className="custom_container" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="300">
           <Slider {...settings}>
             <div className="px-2 outline">
               <img src={slide1} alt="GirlWithBlackJacket" className="w-100" />
-              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1">
+              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Collin
               </h4>
-              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3">
+              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3 text-center text-lg-start">
                 Founder
               </p>
             </div>
             <div className="px-2 outline">
               <img src={slide2} alt="GirlWithBlackJacket" className="w-100" />
-              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1">
+              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Pharaox
               </h4>
-              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3">
+              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3 text-center text-lg-start">
                 Founder
               </p>
             </div>
             <div className="px-2 outline">
               <img src={slide3} alt="GirlWithBlackJacket" className="w-100" />
-              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1">
+              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Zach
               </h4>
-              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3">
+              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3 text-center text-lg-start">
                 CM
               </p>
             </div>
             <div className="px-2 outline">
               <img src={slide4} alt="GirlWithBlackJacket" className="w-100" />
-              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1">
+              <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Arlen
               </h4>
-              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3">
+              <p className="ff_montserrat fs_sm fw-normal lh_150 text-black mb-3 text-center text-lg-start">
                 CM
               </p>
             </div>

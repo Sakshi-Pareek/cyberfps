@@ -9,15 +9,30 @@ const Cyberfps = () => {
         <Container className="custom_container">
           <Row className="align-items-center justify-content-center">
             <Col xs={11} sm={12} lg={6}>
-              <h2 className="ff_audiowide text-black fw-normal fs_xl position-relative">
+              <h2
+                className="ff_audiowide text-black fw-normal fs_xl position-relative"
+                data-aos="fade-right"
+                data-aos-duration="300"
+                data-aos-easing="linear"
+              >
                 What is <span className="text_sky cyberfps_line">CyberFPS</span>
               </h2>
-              <p className="ff_montserrat fw-normal fs_sm text-black opacity_07 mw_562 py-3">
+              <p
+                className="ff_montserrat fw-normal fs_sm text-black opacity_07 mw_562 py-3"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="linear"
+              >
                 CyberFPS is centered around 5v5 Search & Destroy style combat
                 with P2E mechanics featuring the $AMMO Token and deep
                 integrations within the CryptoStraps ecosystem.
               </p>
-              <p className="ff_montserrat fw-normal fs_sm text-black opacity_07 mw_562 mb-0">
+              <p
+                className="ff_montserrat fw-normal fs_sm text-black opacity_07 mw_562 mb-0"
+                data-aos="fade-right"
+                data-aos-duration="700"
+                data-aos-easing="linear"
+              >
                 CyberFPS pits 2 teams of 5 players against each other with the
                 objective being to attack or defend depending on which side you
                 start on. This "Search & Destroy" style combat has been

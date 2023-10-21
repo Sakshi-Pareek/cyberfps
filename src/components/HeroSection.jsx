@@ -17,77 +17,97 @@ const HeroSection = () => {
       <div className="hero_bg">
         <Container className="custom_container">
           <div className="d-flex align-items-center justify-content-between">
-            <a href=""><img
-              src={WebLogo}
-              alt="WebLogo"
-              className="w-100 max_w_128 h-100"
-            /></a>
+            <a href="">
+              <img
+                src={WebLogo}
+                alt="WebLogo"
+                className="w-100 max_w_128 h-100"
+              />
+            </a>
             <ul
               id="navbar"
-              className="d-flex gap-4 mb-0 flex-column list-unstyled flex-lg-row justify-content-center align-items-center mobile_view z_index_3"
+              className="d-flex gap-4 mb-0 flex-column list-unstyled flex-xl-row justify-content-center align-items-center mobile_view z_index_3"
             >
               <li className="link hover_border position-relative">
                 <Link
                   onClick={opennav}
-                  className="nav-link text-white fs-sm6 fw-normal ff-Audiowide"
+                  className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                   to="/CyberGame"
                 >
                   About
                 </Link>
               </li>
-              <li className="link">
+              <li className="link hover_border position-relative">
                 <Link
                   onClick={opennav}
                   to="/Cs"
-                  className="text-white fs-sm6 fw-normal ff-Audiowide"
+                  className="text-white fs_sm fw-normal ff_audiowide lh_normal px-3"
                 >
                   CryptoStraps
                 </Link>
               </li>
-              <li className="link">
+              <li className="link hover_border position-relative">
                 <Link
                   onClick={opennav}
                   to="/TeamSection"
-                  className="text-white fs-sm6 fw-normal ff-Audiowide"
+                  className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
                   Team
                 </Link>
               </li>
-              <li className="link">
+              <li className="link hover_border position-relative">
                 <Link
                   onClick={opennav}
                   to="FaqSection"
-                  className="text-white fs-sm6 fw-normal ff-Audiowide"
+                  className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
                   Faq
                 </Link>
               </li>
-              <li className="link">
+              <li className="link hover_border position-relative">
                 <Link
                   onClick={opennav}
                   to="SolanaSection"
-                  className="text-white fs-sm6 fw-normal ff-Audiowide"
+                  className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
                   Light Paper
                 </Link>
               </li>
             </ul>
-            <div className="d-flex align-items-baseline nav_button gap-2">
-              <TwitterIcon />
-              <InstagramIcon />
-              <Discordicon />
+            <div className="d-flex align-items-baseline nav_button d-sm-block d-none">
+              <a
+                href="https://discord.com/servers"
+                target="blank"
+                className="w-100 me-3 pe-1 social_icon"
+              >
+                <TwitterIcon />
+              </a>
+              <a
+                href="https://discord.com/servers"
+                target="blank"
+                className="w-100 me-3 pe-1 social_icon"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href="https://discord.com/servers"
+                target="blank"
+                className="w-100 social_icon"
+              >
+                <Discordicon />
+              </a>
             </div>
             <div
               id="menubtn-icon"
               onClick={opennav}
-              className="d-lg-none d-block z_index_3 pe-2 pt-2"
+              className="d-xl-none d-block z_index_5 pe-2 pt-2"
             >
               <div className="line"></div>
               <div className="line1 my-2"></div>
               <div className="line2"></div>
             </div>
           </div>
-          <Row className="justify-content-lg-between justify-content-center align-items-center">
+          <Row className="justify-content-lg-between justify-content-center align-items-center mt-lg-0 mt-5">
             <Col
               xs={11}
               sm={12}
@@ -99,20 +119,33 @@ const HeroSection = () => {
                 src={HeroLogo}
                 alt="HeroLogo"
                 className="w-100 max_w_344 max_h_239"
+                data-aos="fade-right"
+                data-aos-duration="300"
+                data-aos-easing="linear"
               />
-              <h1 className="ff_audiowide fs_lg fw-normal lh_normal text-white mb-lg-5">
+              <h1
+                className="ff_audiowide fs_lg fw-normal lh_normal text-white mb-lg-5"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="linear"
+              >
                 Web3 Gaming Reimagined
               </h1>
-              <div className="text-center">
+              <div
+                className="text-center"
+                data-aos="fade-right"
+                data-aos-duration="700"
+                data-aos-easing="linear"
+              >
                 <button
                   href="#"
-                  className="ff_audiowide fs-sm fw-normal text-black get_btn d-inline-block me-3 mt-3"
+                  className="ff_audiowide fs-sm fw-normal text-black get_btn d-inline-block me-3 mt-3 glass_hover"
                 >
                   Get Started
                 </button>
                 <button
                   href="#"
-                  className="ff_audiowide fs-sm fw-normal text-white learn_btn d-inline-block me-sm-0 me-3 mt-3"
+                  className="ff_audiowide fs-sm fw-normal text-white learn_btn d-inline-block me-sm-0 me-3 mt-3 glass_hover"
                 >
                   Learn More
                 </button>
@@ -123,6 +156,7 @@ const HeroSection = () => {
               sm={10}
               lg={5}
               xl={6}
+              data-aos="zoom-in-left"
               className="d-flex flex-column justify-content-lg-start justify-content-center align-items-center"
             >
               <img
