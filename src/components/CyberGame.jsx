@@ -9,15 +9,16 @@ const CyberGame = () => {
       <Container className="custom_container pt_gameplay">
         <h2
           className="fs_xl ff_audiowide fw-normal text-center gameplay_line position-relative gameplay"
-          data-aos="fade-right"
-          data-aos-duration="300"
+          data-aos="fade-down"
+          data-aos-duration="400"
+          data-aos-easing="linear"
         >
           CyberFPS <span className="text-teal">Gameplay</span>
         </h2>
         <div
           className="d-flex flex-column justify-content-center align-items-center position-relative pt_modal"
           data-aos="fade-right"
-          data-aos-duration="300"
+          data-aos-duration="600"
           data-aos-easing="linear"
         >
           <div

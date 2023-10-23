@@ -14,7 +14,7 @@ const HeroSection = () => {
   }
   return (
     <>
-      <div className="hero_bg">
+      <div className="hero_bg bg-black">
         <Container className="custom_container">
           <div className="d-flex align-items-center justify-content-between">
             <a href="">
@@ -41,7 +41,7 @@ const HeroSection = () => {
                 <Link
                   onClick={opennav}
                   to="/Cs"
-                  className="text-white fs_sm fw-normal ff_audiowide lh_normal px-3"
+                  className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
                   CryptoStraps
                 </Link>

@@ -10,12 +10,14 @@ import slide4 from "../assets/images/webp/MenInBlackTee.webp";
 
 const TeamSection = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 300,
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -57,7 +59,7 @@ const TeamSection = () => {
         <Container className="custom_container" data-aos="fade-up"
      data-aos-anchor-placement="top-center" data-aos-duration="300">
           <Slider {...settings}>
-            <div className="px-2 outline">
+            <div className="px-2 outline team_card">
               <img src={slide1} alt="GirlWithBlackJacket" className="w-100" />
               <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Collin
@@ -66,7 +68,7 @@ const TeamSection = () => {
                 Founder
               </p>
             </div>
-            <div className="px-2 outline">
+            <div className="px-2 outline team_card">
               <img src={slide2} alt="GirlWithBlackJacket" className="w-100" />
               <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Pharaox
@@ -75,7 +77,7 @@ const TeamSection = () => {
                 Founder
               </p>
             </div>
-            <div className="px-2 outline">
+            <div className="px-2 outline team_card">
               <img src={slide3} alt="GirlWithBlackJacket" className="w-100" />
               <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Zach
@@ -84,7 +86,7 @@ const TeamSection = () => {
                 CM
               </p>
             </div>
-            <div className="px-2 outline">
+            <div className="px-2 outline team_card">
               <img src={slide4} alt="GirlWithBlackJacket" className="w-100" />
               <h4 className="ff_montserrat fs_md fw-semibold lh_normal text-black mt-3 mb-1 text-center text-lg-start">
                 Arlen

@@ -77,10 +77,11 @@
   padding: 4px 22px;
 }
 .link {
-  background-image: url("./assets/images/webp/rectangle_img.webp");
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  border: 2px solid #fff;
+  display: flex;
+  padding: 1px 16px;
+  -webkit-transform: skewX(-30deg);
+  transform: skewX(-30deg);
 }
 .z_index_5 {
   z-index: 5 !important;
@@ -89,34 +90,33 @@
 .hover_border::before {
   content: "";
   display: block;
-  height: 18px;
+  height: 20px;
   position: absolute;
-  transition: all 0.3s linear;
-  width: 18px;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
 }
 
 .hover_border:hover::before {
   border-right: 3.5px solid #1eadb6;
   border-top: 3.5px solid #1eadb6;
-  right: -4px;
-  top: -4px;
+  right: -5.2px;
+  top: -5.2px;
 }
 
 .hover_border::after {
-  content: "" !important;
-  display: block !important;
-  height: 18px !important;
-  position: absolute !important;
-  transition: all 0.3s linear !important;
-  width: 18px !important;
-  transform: rotate(180deg);
+  content: "";
+  display: block;
+  height: 20px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
 }
 
 .hover_border:hover::after {
-  border-right: 3.5px solid #1eadb6 !important;
-  border-top: 3.5px solid #1eadb6 !important;
-  top: 17.5px !important;
-  left: -4px;
+  border-bottom: 3.5px solid #1eadb6;
+  border-left: 3.5px solid #1eadb6;
+  bottom: -5.2px;
+  left: -5.2px;
 }
 .social_icon {
   position: relative;
@@ -266,7 +266,7 @@
   position: absolute;
   left: 0;
   bottom: -7%;
-  max-width: 117px;
+  max-width: 179px;
   width: 100%;
   height: 2px;
   background: #1eadb6;
@@ -291,6 +291,12 @@
 .outline {
   outline: none !important;
   cursor: pointer;
+}
+.team_card > img {
+  transition: all 0.2s linear;
+}
+.team_card:hover img {
+  transform: scale(1.03);
 }
 /* ------------------------------------faq-section----------------------------------- */
 .py_faq {

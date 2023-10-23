@@ -14,7 +14,7 @@ const Cs = () => {
             <Col xs={11} sm={12} lg={6} className="pt-5 pt-lg-0">
               <h2 className="ff_audiowide fw-normal text-white fs_xl position-relative" data-aos="fade-left"
                 data-aos-duration="300" data-aos-easing="linear">
-                CryptoStraps
+                <span className="position-relative cyberfps_line">CryptoStraps</span>
               </h2>
               <div className="blue_line pb-1"></div>
               <p className="ff_montserrat fs_sm fw-normal text-white lh_150 mw_568 opacity_07 pt-2 mb-0" data-aos="fade-left"
