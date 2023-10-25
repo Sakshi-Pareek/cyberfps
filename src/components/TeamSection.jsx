@@ -52,7 +52,7 @@ const TeamSection = () => {
   };
   return (
     <>
-      <div className="py_team">
+      <div className="py_team" id="team">
         <h2 className="text-center ff_audiowide fs_xl fw-normal lh_normal text-black mb-5 pb-2" data-aos="zoom-in">
           <span className="team_line position-relative">Team</span>
         </h2>

@@ -5,7 +5,7 @@ import { Accrdnradius, Accrdnradius_bttm } from "./IconsImg";
 const FaqSection = () => {
   return (
     <>
-      <div className="bg-black pt-5">
+      <div className="bg-black pt-5" id="faq">
         <h3 className="fs_xl fw-normal ff_audiowide text-white text-center">
           <span
             className="team_line position-relative pb-1"

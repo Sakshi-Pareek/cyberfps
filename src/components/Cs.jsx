@@ -5,7 +5,7 @@ import Csimg from "../assets/images/webp/cs_img.webp";
 const Cs = () => {
   return (
     <>
-      <div className="bg-black py_cryptostrap">
+      <div className="bg-black py_cryptostrap" id="cs">
         <Container className="custom_container">
           <Row className="align-items-center justify-content-center">
             <Col xs={10} sm={11} lg={6}>

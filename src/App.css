@@ -92,7 +92,7 @@
   display: block;
   height: 20px;
   position: absolute;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s linear;
   width: 20px;
 }
 
@@ -108,7 +108,7 @@
   display: block;
   height: 20px;
   position: absolute;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s linear;
   width: 20px;
 }
 
@@ -252,10 +252,11 @@
   opacity: 70%;
 }
 .bg_cyber {
-  background-image: url(./assets/images/webp/dotes_bg.webp);
+  background-image: url(./assets/images/webp/bg_gameplay.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: white;
 }
 .py_cyber {
   padding: 170px 0px;
@@ -292,11 +293,17 @@
   outline: none !important;
   cursor: pointer;
 }
-.team_card > img {
+.team_card > img,
+.solana_img {
   transition: all 0.2s linear;
 }
 .team_card:hover img {
   transform: scale(1.03);
+}
+.slick-dots li button::before,
+.slick-dots li.slick-active button:before {
+  font-size: 15px !important;
+  color: #1eadb6 !important;
 }
 /* ------------------------------------faq-section----------------------------------- */
 .py_faq {
@@ -386,10 +393,11 @@
 }
 /* ---------------------------------Solana-section-------------------------------------- */
 .bg_solana {
-  background-image: url(./assets/images/webp/dotes_bg.webp);
+  background-image: url(./assets/images/webp/bg_salona.webp);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+  background-color: white;
 }
 .max_w_385 {
   max-width: 385px;
@@ -398,10 +406,14 @@
   max-width: 263px;
 }
 .max_h_225 {
-  max-block-size: 225px;
+  max-height: 225px;
 }
 .py_solana {
   padding: 180px 0;
+}
+.solana_img:hover {
+  transform: scale(1.05) !important;
+  cursor: pointer;
 }
 /* -----------------------------------------footer-section-------------------------------- */
 .bg_footer {
@@ -492,13 +504,18 @@
     --fs-md: 24px;
     --fs-sm: 16px;
   }
+  .hero_bg {
+    background-size: cover;
+  }
 }
 @media (max-width: 576px) {
   .py_solana,
-  .py_team,
   .py_cryptostrap,
   .py_cyber {
     padding: 40px 0;
+  }
+  .py_team {
+    padding: 60px 0;
   }
   .pt_modal {
     padding-top: 25px;
@@ -529,6 +546,11 @@
   }
   .right-1 {
     right: -3.5%;
+  }
+  .slick-dots li button::before,
+  .slick-dots li.slick-active button:before {
+    font-size: 10px !important;
+    color: #1eadb6 !important;
   }
   :root {
     --fs-xl: 40px;

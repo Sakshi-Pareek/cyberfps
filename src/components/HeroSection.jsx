@@ -16,7 +16,12 @@ const HeroSection = () => {
     <>
       <div className="hero_bg bg-black">
         <Container className="custom_container">
-          <div className="d-flex align-items-center justify-content-between">
+          <div
+            className="d-flex align-items-center justify-content-between"
+            data-aos="fade-down"
+            data-aos-duration="600"
+            data-aos-easing="linear"
+          >
             <a href="">
               <img
                 src={WebLogo}
@@ -29,49 +34,49 @@ const HeroSection = () => {
               className="d-flex gap-4 mb-0 flex-column list-unstyled flex-xl-row justify-content-center align-items-center mobile_view z_index_3"
             >
               <li className="link hover_border position-relative">
-                <Link
+                <a
+                  href="#about"
                   onClick={opennav}
                   className="text-white fs_sm fw-normal ff_audiowide lh_normal"
-                  to="/CyberGame"
                 >
                   About
-                </Link>
+                </a>
               </li>
               <li className="link hover_border position-relative">
-                <Link
+                <a
+                  href="#cs"
                   onClick={opennav}
-                  to="/Cs"
                   className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
                   CryptoStraps
-                </Link>
+                </a>
               </li>
               <li className="link hover_border position-relative">
-                <Link
+                <a
+                  href="#team"
                   onClick={opennav}
-                  to="/TeamSection"
                   className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
                   Team
-                </Link>
+                </a>
               </li>
               <li className="link hover_border position-relative">
-                <Link
+              <a
+                  href="#faq"
                   onClick={opennav}
-                  to="FaqSection"
                   className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
-                  Faq
-                </Link>
+                   Faq
+                </a>
               </li>
               <li className="link hover_border position-relative">
-                <Link
+              <a
+                  href="#paper"
                   onClick={opennav}
-                  to="SolanaSection"
                   className="text-white fs_sm fw-normal ff_audiowide lh_normal"
                 >
-                  Light Paper
-                </Link>
+                    Light Paper
+                </a>
               </li>
             </ul>
             <div className="d-flex align-items-baseline nav_button d-sm-block d-none">
@@ -113,7 +118,7 @@ const HeroSection = () => {
               sm={12}
               lg={6}
               xl={5}
-              className="d-flex flex-column justify-content-lg-start justify-content-center align-items-center"
+              className="d-flex flex-column justify-content-lg-start justify-content-center align-items-lg-start align-items-center"
             >
               <img
                 src={HeroLogo}
@@ -132,7 +137,7 @@ const HeroSection = () => {
                 Web3 Gaming Reimagined
               </h1>
               <div
-                className="text-center"
+                className="text-lg-start text-center"
                 data-aos="fade-right"
                 data-aos-duration="700"
                 data-aos-easing="linear"

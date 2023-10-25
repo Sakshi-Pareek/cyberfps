@@ -6,7 +6,7 @@ import { Modalplaybtn } from "./IconsImg";
 const CyberGame = () => {
   return (
     <>
-      <Container className="custom_container pt_gameplay">
+      <Container className="custom_container pt_gameplay" id="about">
         <h2
           className="fs_xl ff_audiowide fw-normal text-center gameplay_line position-relative gameplay"
           data-aos="fade-down"

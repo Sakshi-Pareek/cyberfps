@@ -18,7 +18,7 @@ function App() {
       duration: 1200,
       once: true,
     });
-    Aos.refresh();
+    // Aos.refresh();
   });
 
   return (
