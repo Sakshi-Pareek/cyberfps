@@ -34,14 +34,16 @@ function App() {
       </Routes > */}
 
 
-      <HeroSection />
-      <CyberGame />
-      <Cyberfps />
-      <Cs />
-      <TeamSection />
-      <FaqSection />
-      <SolanaSection />
-      <Footer />
+      <div className='overflow-x-hidden'>
+        <HeroSection />
+        <CyberGame />
+        <Cyberfps />
+        <Cs />
+        <TeamSection />
+        <FaqSection />
+        <SolanaSection />
+        <Footer />
+      </div>
     </>);
 }
 
